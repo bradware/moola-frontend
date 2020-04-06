@@ -1,2 +1,2 @@
-# Moola-Frontend
-Moola's front end interface at app.bankwithmoola.com
+# moola-frontend
+Frontend Web client for Moola (deprecated)
