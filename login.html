@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- HEADER -->
+    <title>Moola</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/header.css" rel="stylesheet">
+
+    <!-- END OF HEADER -->
+  </head>
+  <body class="container-fluid">
+    <!-- Header Inserted - NO PANEL HEADING ON INDEX -->
+<!--
+    <header class="row header-wrapper">
+      <div class="logo-component">
+        <img id="logo-brand" src="images/moola_logo_white.png">
+      </div>
+    </header>
+-->
+    <!-- End of Header -->
+    <main>
+      <div class="title">
+        <div class="row text-center login-logo-component">
+          <img id="logo-alt" src="images/moola_logo_color.png">
+        </div>
+      </div>
+      <div class="row text-center login-form-container">
+        <form class="form-horizontal">
+          <div class="form-group">
+<!--            <label for="inputEmail3" class="col-sm-offset-3 col-sm-2 control-label">Email</label>-->
+            <div class="col-sm-offset-4 col-sm-4">
+              <input type="email" class="form-control" id="email" placeholder="Email" required><!--API call-->
+            </div>
+          </div>
+          <div class="form-group">
+<!--            <label for="inputPassword3" class="col-sm-offset-3 col-sm-2 control-label">Password</label>-->
+            <div class="text-center col-sm-offset-4 col-sm-4">
+              <input type="password" class="form-control" id="password" placeholder="Password" required><!--API call-->
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-10 button-container">
+              <a href="home.html">
+                <button type="button" class="btn btn-default" id="login" disabled>sign in</button><!--API call-->
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

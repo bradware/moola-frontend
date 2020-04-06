@@ -1,0 +1,143 @@
+body {
+    overflow-x: hidden;
+ }
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    margin-top: 100px;
+    overflow-y: auto;
+    background: #398D36;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 200px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-header-text {
+  color: white;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.account-info-wrapper {
+  display: block;
+  padding-left: 40px;
+}
+
+.sidebar-subheading {
+  color: white;
+  font-weight: lighter;
+}
+
+.sidebar-account-balance {
+  color: white;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.sidebar-upcoming-withdrawals {
+ margin-left: 10px;
+}
+
+.withdrawal-entry {
+  border-bottom: 1px;
+}
+
+
+.withdrawal-amount {
+  color: white;
+}
+
+.withdrawal-date {
+  color: white;
+  display: inline-block;
+  left: 0px;
+}
+
+.withdrawal-child {
+  color: white;
+  display: block;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 200px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}

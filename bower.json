@@ -1,0 +1,21 @@
+{
+  "name": "Moola Frontend",
+  "homepage": "https://bradware.com",
+  "authors": [
+    "Brad Ware bwarenohs@gmail.com"
+  ],
+  "description": "Financial literacy app for kids",
+  "main": "server.js",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

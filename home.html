@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- HEADER -->
+    <title>Moola</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./styles/main.css" rel="stylesheet">
+    <link href="./styles/header.css" rel="stylesheet">
+    <link href="./styles/sidebar.css" rel="stylesheet">
+
+    <!-- Favicon 
+    <link rel="icon" type="image/png" href="images/logo_alt_green.png"> -->
+    <!-- END OF HEADER -->
+  </head>
+  <body>
+    <!-- Header Inserted - NO PANEL HEADING ON INDEX -->
+    <header class="row header-wrapper">
+      <div class="logo-component">
+        <img id="logo-brand" src="./images/moola_logo_white.png">
+      </div>
+      <div class="header-text">
+        Welcome, Susie! <!--API call- need to autofill this based on who's logged in-->
+      </div>
+      <div class="settings-button">
+        <i class="fa fa-cogs fa-2x"></i>
+      </div>
+    </header>
+    <!-- End of Header -->
+    <main><!-- add class="container-fluid" here -->
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <div class="sidebar-nav">
+          <h2 class="sidebar-header-text">My Account Info</h2><!--API call-->
+          <div class="row account-info-wrapper">
+            <span class="sidebar-subheading">My Balance:</span>
+            <span class="sidebar-account-balance" id="sidebar_balance">$12,300</span><!--API call-->
+          </div>
+          <span class="row account-info-wrapper">Upcoming Withdrawals</span>
+          <table class="sidebar-upcoming-withdrawals">
+            <!--              this shows every withdrawal from the parents account to any child's account (maybe show the next 30 days 
+up to like 10 total), the date that that's happening, and the kid's account that it's going to.-->
+            <tbody>
+              <tr class="withdrawal-entry">
+                <td class="withdrawal-amount">$30.00</td><!--API call-->
+                <td class="withdrawal-date">03/25/16</td><!--API call-->
+              </tr>
+              <tr class="withdrawal-entry">
+                <td class="withdrawal-amount">$30.00</td><!--API call-->
+                <td class="withdrawal-date">03/25/16</td><!--API call-->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- sidebar-wrapper -->
+      <!-- page-content -->
+      <div class="page-content">
+        <div class="card-group">
+          <!--      <!--API call  we will need to add these dynamically based on the user's account- this one just has dummy data-->
+          <div class="card kid-card" style="width: 20rem;">
+            <img class="card-img-top" src="./images/Ben.png" alt="Card image cap">
+            <a class="btn" href="#"><i class="fa fa-lock fa-lg" id="lock_button0"></i></a>
+            <div class="card-block">
+              <h4 class="card-title">Joe</h4><!--API call-->
+              <p class="card-text">$42.58</p><!--this needs to be bigger than card-title--><!--API call-->
+            </div>
+            <!--            add a label here to show date, amount, where it was spent.-->
+            <ul class="list-group list-group-flush recent-transactions"><!--<!--API call -will need to dynamically populate this, 10 most recen transactions-->
+              <li class="list-group-item transaction-item" id="li11">Moe's   $8.87</li>
+              <li class="list-group-item transaction-item" id="li12">Dapibus ac facilisis in</li>
+              <li class="list-group-item transaction-item" id="li13">Vestibulum at eros</li>
+            </ul>
+            <input type="text" class="quick-transfer-button-input" placeholder="$0.00" required id="transfer_field_1">
+            <button type="button" class="btn btn-block transfer-button" id="transfer1">Quick Transfer</button>
+          </div>
+          <div class="card kid-card" style="width: 20rem;">
+            <img class="card-img-top" src="./images/Jake.png" alt="Card image cap">
+            <a class="btn" href="#"><i class="fa fa-lock fa-lg" id="lock_button1"></i></a>
+            <div class="card-block">
+              <h4 class="card-title">Thomas</h4><!--API call-->
+              <p class="card-text">$77.23</p><!--this needs to be bigger than card-title--><!--API call-->
+            </div>
+            <!--            add a label here to show date, amount, where it was spent.-->
+            <ul class="list-group list-group-flush recent-transactions"><!--<!--API call -will need to dynamically populate this, 10 most recen transactions-->
+              <li class="list-group-item transaction-item" id="li21">Moe's   $8.87</li>
+              <li class="list-group-item transaction-item" id="li22">Dapibus ac facilisis in</li>
+              <li class="list-group-item transaction-item" id="li23">Vestibulum at eros</li>
+            </ul>
+            <input type="text" class="quick-transfer-button-input" placeholder="$0.00" required id="transfer_field_2">
+            <button type="button" class="btn btn-block transfer-button" id="transfer2">Quick Transfer</button>
+          </div>
+          <div class="card kid-card" style="width: 20rem;">
+            <img class="card-img-top" src="./images/susy.png" alt="Card image cap">
+            <a class="btn" href="#"><i class="fa fa-lock fa-lg" id="lock_button2"></i></a>
+            <div class="card-block">
+              <h4 class="card-title">Elizabeth</h4><!--API call-->
+              <p class="card-text">$84.51</p><!--this needs to be bigger than card-title--><!--API call-->
+            </div>
+            <!--            add a label here to show date, amount, where it was spent.-->
+            <ul class="list-group list-group-flush recent-transactions"><!--<!--API call -will need to dynamically populate this, 10 most recen transactions-->
+              <li class="list-group-item transaction-item" id="li31">Moe's   $8.87</li>
+              <li class="list-group-item transaction-item" id="li32">Dapibus ac facilisis in</li>
+              <li class="list-group-item transaction-item" id="li33">Vestibulum at eros</li>
+            </ul>
+            <input type="text" class="quick-transfer-button-input" placeholder="$0.00" required id="transfer_field_3">
+            <button type="button" class="btn btn-block transfer-button" id="transfer3">Quick Transfer</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

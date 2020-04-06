@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- HEADER -->
+    <title>Moola</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/header.css" rel="stylesheet">
+
+    <!-- Favicon 
+    <link rel="icon" type="image/png" href="images/logo_alt_green.png"> -->
+    <!-- END OF HEADER -->
+  </head>
+  <body>
+    <!-- Header Inserted - NO PANEL HEADING ON INDEX -->
+    <header class="row">
+      <!--      logo should go here/header area-->
+    </header>
+
+    <!-- End of Header -->
+    <main>
+      <div class="title">
+        <div class="row text-center logo-component">
+          <img id="logo-alt" src="images/moola_logo_color.png">
+        </div>
+      </div>
+      <div class="row text-center signup-personalInfo-form">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputPhoneNumber" class="col-sm-2 control-label">Phone Number</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="phone-number" placeholder="Phone Number" required><!--API call-->
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputDOB" class="col-sm-2 control-label">Date of Birth (mm/dd/yyyy)</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="dob" placeholder="Date of Birth" required><!--API call-->
+              <!--              I think in the input type i could change these to be more corredt-->
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputSSN" class="col-sm-2 control-label">Last 4 Digits of your SSN</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="ssn" placeholder="SSN" required><!--API call-->
+            </div>
+          </div>
+          </div>
+        </form>
+      </div>
+    <div class="row text-center signup-address-form">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputStreetAddress" class="col-sm-2 control-label">Street Address</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="street" placeholder="Street Address" required><!--API call-->
+          </div>
+        </div>
+        <form class="form-inline">
+        <div class="form-group">
+          <label for="inputCity" class="col-sm-2 control-label">City</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="city" placeholder="City" required><!--API call-->
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputState" class="col-sm-2 control-label">State</label>
+          <div class="col-sm-10">
+            <input type="state" class="form-control" id="state" placeholder="State" required><!--API call-->
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputState" class="col-sm-2 control-label">Zip</label>
+          <div class="col-sm-10">
+            <input type="state" class="form-control" id="postal-code" placeholder="Zip Code" required><!--API call-->
+          </div>
+        </div>
+        </form>
+        </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10 button-container">
+          <button type="button" class="btn btn-default" id="next" disabled>next</button><!--API call-->
+        </div>
+      </div>
+      </form>
+    </div>
+  </main>
+
+<!-- JS -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/signup-personal-info.js"></script>
+</body>
+</html>
